@@ -1,0 +1,31 @@
+#include <string.h>
+int main()
+
+{
+    char s[1000],x,y;  
+    int  i;
+
+    printf("Enter  the string : ");
+    gets(s);
+
+    	printf("Enter a character replace: ");
+    x=getchar();
+    getchar();
+
+    printf("\nEnter character to replace  with  %c : ",x);
+    y=getchar();
+
+    printf("\n before replace:%s",s);
+
+    for(i=0;s[i];i++)
+	{  
+
+		if(s[i]==x)
+		   { 
+		   s[i]=y;
+	    }
+	}
+    printf("\nafter replace:%s",s);
+return 0;
+}
+
